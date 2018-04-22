@@ -8,6 +8,10 @@ public class Funcionarios {
     private int statusFuncionario;
     private String loginFuncionario;
     private String senhaFuncionario;
+    
+    public Funcionarios(){
+        
+    }
 
     public Funcionarios(int idFuncionario, String nomeFuncionario, String emailFuncionario, int statusFuncionario, String loginFuncionario, String senhaFuncionario) {
         this.idFuncionario = idFuncionario;
