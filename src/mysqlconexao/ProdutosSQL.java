@@ -1,5 +1,6 @@
 package mysqlconexao;
 
+import email.JavaMailApp;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -35,6 +36,8 @@ public class ProdutosSQL {
         if(list.isEmpty()){
             String Erro = "Estoque vazio!";
             System.out.println(Erro);
+            JavaMailApp enviaEmail = new JavaMailApp();
+            enviaEmail.main();
         }
         return list;
     }
